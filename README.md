@@ -1,1 +1,1 @@
-**基于`YuQ-Mirai`的LittleSkin社区支持机器人** 
+**CuBitStudio YuQ-Mirai机器人开发模版**
