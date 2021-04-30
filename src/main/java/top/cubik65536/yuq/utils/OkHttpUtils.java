@@ -310,7 +310,7 @@ public class OkHttpUtils {
     }
 
     public static RequestBody addStream(String url) throws IOException {
-       return addStream(getByteStr(url));
+        return addStream(getByteStr(url));
     }
 
     public static String getCookie(Response response){

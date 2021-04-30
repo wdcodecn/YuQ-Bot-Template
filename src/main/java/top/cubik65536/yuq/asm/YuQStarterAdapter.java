@@ -32,16 +32,14 @@ public class YuQStarterAdapter extends ClassVisitor {
 			String str = value.toString();
 			if (str.startsWith("感谢您使用 YuQ 进行开发")){
 				try {
-					String my =
-							"    __         __               __          __ \n" +
-									"   / /____  __/ /____  __      / /_  ____  / /_\n" +
-									"  / //_/ / / / //_/ / / /_____/ __ \\/ __ \\/ __/\n" +
-									" / ,< / /_/ / ,< / /_/ /_____/ /_/ / /_/ / /_  \n" +
-									"/_/|_|\\__,_/_/|_|\\__,_/     /_.___/\\____/\\__/  \n";
+					String my = "    ___      ___      _   __      _   __      ___      ___    __  ___        / __      ___    __  ___ \n" +
+									"  //   ) ) //   ) ) // ) )  ) ) // ) )  ) ) ((   ) ) //   ) )  / /    ____  //   ) ) //   ) )  / /    \n" +
+									" //       //   / / // / /  / / // / /  / /   \\ \\    //___/ /  / /          //   / / //   / /  / /     \n" +
+									"((____   ((___/ / // / /  / / // / /  / / //   ) ) //        / /          ((___/ / ((___/ /  / /      \n";
 					value = "感谢您使用 YuQ 进行开发，在您使用中如果遇到任何问题，可以到 Github（ https://github.com/IceCream-Open/Rain 、 https://github.com/YuQWorks/YuQ ）提出 issue，您也可以添加 YuQ 的开发交流群\n" +
 							"（Njk2MTI5MTI4）（Base64解码网站：http://tools.bugscaner.com/base64/ ）进行交流。\n" +
 							my + "\n" +
-							"感谢您使用 kuku-bot，在您使用中如果遇到任何问题，可以到 Github（ https://github.com/kukume/kuku-bot ）提出 issue";
+							"欢迎使用LittleSkin社区支持机器人！";
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
@@ -76,7 +74,7 @@ public class YuQStarterAdapter extends ClassVisitor {
 						"()[B", false);
 				super.visitVarInsn(Opcodes.ASTORE, 5);
 				super.visitVarInsn(Opcodes.ALOAD, 3);
-				super.visitLdcInsn("me.kuku.yuq.controller.ASMController");
+				super.visitLdcInsn("top.cubik65536.yuq.controller.ASMController");
 				super.visitVarInsn(Opcodes.ALOAD, 5);
 				super.visitMethodInsn(Opcodes.INVOKEVIRTUAL, "com/IceCreamQAQ/Yu/loader/AppClassloader", "define",
 						"(Ljava/lang/String;[B)Ljava/lang/Class;", false);
