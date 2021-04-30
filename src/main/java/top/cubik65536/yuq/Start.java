@@ -30,7 +30,7 @@ public class Start {
         File yuqFile = new File("conf/YuQ.properties");
         if (!yuqFile.exists()){
             try {
-                byte[] bytes = OkHttpUtils.downloadBytes("https://drive.cubik65536.top/Commspt-Bot-Config-Template/YuQ.properties");
+                byte[] bytes = OkHttpUtils.downloadBytes("https://cdn.jsdelivr.net/gh/CubikBitStudio/YuQ-Bot-Template@master/src/main/resources/conf/YuQ.properties");
                 IO.writeFile(yuqFile, bytes);
             } catch (IOException e) {
                 e.printStackTrace();
