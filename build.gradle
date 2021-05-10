@@ -44,6 +44,6 @@ tasks.withType(JavaCompile) {
 
 jar {
     manifest {
-        attributes ('Main-Class': 'me.kuku.yuq.Start')
+        attributes ('Main-Class': 'top.cubik65536.yuq.Start')
     }
 }
